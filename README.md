@@ -3,6 +3,10 @@
 Simple starting template for a dApp frontend built using Nextjs and Chakra-ui,
 with responsiveness and accessibility in mind.
 
+## Preview
+
+You can view a live preview of the project [here](https://dapp-template-next.vercel.app/)
+
 ## Technologies
 
 | name                                                      | version |
