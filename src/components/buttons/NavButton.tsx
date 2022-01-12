@@ -13,6 +13,8 @@ const NavButton = ({ label, path, icon }: Props) => {
     const router = useRouter()
     const active = router.asPath === path
 
+    const color = useColorModeValue('theme.bg', 'gray.100')
+
     return (
         <NextLink href={path} passHref>
             <Button
@@ -27,11 +29,7 @@ const NavButton = ({ label, path, icon }: Props) => {
                 <Icon
                     as={icon}
                     fontSize={{ base: '2xl', md: 'xl' }}
-                    color={
-                        active
-                            ? 'theme.primary'
-                            : useColorModeValue('theme.bg', 'gray.100')
-                    }
+                    color={active ? 'theme.primary' : color}
                     transition="all 225ms ease-in-out"
                     _groupHover={{
                         color: active ? undefined : 'theme.secondary'
