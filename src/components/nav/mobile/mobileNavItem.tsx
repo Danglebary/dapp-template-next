@@ -45,11 +45,7 @@ const MobileNavItem = ({ icon, path, label, mb }: MobileNavItemProps) => {
                     )
                 }}
                 isDisabled={active}
-                color={
-                    active
-                        ? useColorModeValue('theme.bg', 'theme.primary')
-                        : undefined
-                }
+                color={useColorModeValue('theme.bg', 'theme.primary')}
             >
                 <Link>{label}</Link>
             </MenuItem>
