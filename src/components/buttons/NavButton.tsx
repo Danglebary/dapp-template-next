@@ -22,6 +22,7 @@ const NavButton = ({ label, path, icon }: Props) => {
                 role="group"
                 color={active ? 'theme.primary' : undefined}
                 disabled={!!active}
+                aria-label={`navigate to ${label} page`}
                 _disabled={{
                     cursor: 'pointer'
                 }}
